@@ -25,6 +25,17 @@ class Gossip
     end
   end
 
+  def self.all(file_name)
+    all_gossips = [] # 1) création d'un Array d'instances de la classe Gossip, vide, qui s'appelle all_gossips
+    CSV.open("./db/#{PREFIX}#{file_name}", "r") do |csv_file| # le chemin relatif est donné par rapport au répertoire d'où est lancée l'application app.rb
+      csv_file.each do |row| # 2) pour chaque ligne de ton .csv
+        all_gossips << Gossip.new(row[0], row[1])
+        # rajoute au Array "all_gossips" le gossip (dont je n'ai pas sauvegardé la référence dans une variable "gossip_provisoire") créé avec les données de la ligne lue
+      end
+    end
+    return all_gossips
+  end
+
   private # Toutes les méthodes définies ci-après sont privées : il est interdit de pouvoir les appeler en dehors du code de la classe (donc interdit même dans le "main" ici-même dans ce fichier)
 
   def check_name(file_to_save_name)

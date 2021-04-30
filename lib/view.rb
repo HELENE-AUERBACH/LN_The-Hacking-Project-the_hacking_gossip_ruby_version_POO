@@ -9,6 +9,12 @@ class View
                          3, 200)
     return {"author" => author, "content" => content}
   end
+
+  def index_gossips(gossips)
+    if !gossips.nil? && gossips.length > 0
+      gossips.each { |gossip| puts "\nSelon \"#{gossip.author}\" :\n\t\"#{gossip.content}\"." if gossip.instance_of?(Gossip) }
+    end
+  end
   
   private
 

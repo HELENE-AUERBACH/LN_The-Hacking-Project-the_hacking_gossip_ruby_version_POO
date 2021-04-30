@@ -18,5 +18,10 @@ class Controller
     gossip.save("gossip.csv") # demande au model de l'inscrire dans le CSV avec gossip.save
   end
 
+  def index_gossips
+    gossips_array = Gossip.all("gossip.csv") # demande au model un Array d'objets de la classe Gossip (Array qui contient tous les potins que l'on a en base)
+    @view.index_gossips(gossips_array) # demande à la View d’exécuter sa propre méthode index_gossips qui affichera tous les potins contenus dans "gossips_array"
+  end
+
   #binding.pry
 end
