@@ -1,0 +1,11 @@
+auteur,ceci est un exemple de content
+auteur2,ceci est un autre exemple de potin
+Jean-Michel Concierge,Féfé est de Bordeaux
+,
+,
+LN,Aucune idée!
+Toto,0 = la tête à Toto
+"""Le nom de l'auteur pourrait être """"Personne"""".""","""Warning: the running version of Bundler (2.1.4) is older than the version that created the lockfile (2.2.16). Run `gem install bundler:2.2.16`."""
+"""Le nom de l'auteur pourrait être """"Personne"""".""","""Warning: the running version of Bundler (2.1.4) is older than the version that created the lockfile (2.2.16). Run `gem install bundler:2.2.16`."""
+"Le nom de l'auteur pourrait être """"Personne"""".",Warning: the running version of Bundler (2.1.4) is older than the version that created the lockfile (2.2.16). Run `gem install bundler:2.2.16`.
+"Le nom de l'auteur pourrait être ""Personne"".",Warning: the running version of Bundler (2.1.4) is older than the version that created the lockfile (2.2.16). Run `gem install bundler:2.2.16`.
